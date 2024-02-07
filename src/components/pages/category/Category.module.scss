@@ -1,0 +1,138 @@
+.menu {
+
+    .menu_pg1 {
+        background: url(../../../assets/Drinks/DrinkBg.png) center;
+        background-size: cover;
+        margin-bottom: 2rem;
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 18.75rem;
+
+            h1 {
+                color: #FCF1DB;
+                font-family: Raleway;
+                font-size: 3rem;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: 0.06rem;
+            }
+
+            p {
+                max-width: 36.75rem;
+                padding: 1rem 1rem 0rem 1rem;
+                width: 100%;
+                color: #FCF1DB;
+                text-align: center;
+                font-family: Raleway;
+                font-size: 1.3125rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 1.75rem;
+                letter-spacing: 0.02625rem;
+            }
+        }
+    }
+
+    .menu_pg2 {
+        padding: 12vmin 0;
+
+        h1 {
+            color: #822E1B;
+            font-family: Raleway;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: 0.05rem;
+            text-align: center;
+        }
+
+        #menu_card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 4rem 5vmin;
+            gap: 2rem;
+
+            .menu_card {
+                border-radius: 2.03025rem;
+                border: 1.805px solid #822E1B;
+                width: 21.562rem;
+                min-height: 30.4375rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 1.2rem;
+                padding: 1rem 0;
+
+
+                .drink_height {
+                    height: 232px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        max-width: 4.05925rem;
+                        width: 100%;
+                    }
+                }
+
+                h2 {
+                    color: #822E1B;
+                    font-family: Raleway;
+                    font-size: 1.75rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    text-align: center;
+                    padding-top: .5rem;
+                    line-height: normal;
+                    letter-spacing: 0.035rem;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    color: #822E1B;
+                    font-family: Raleway;
+                    font-size: 0.875rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 1.125rem;
+                    letter-spacing: 0.0175rem;
+                    max-width: 17.1875rem;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                h3 {
+                    color: #822E1B;
+                    font-family: Raleway;
+                    font-size: 1.5625rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    letter-spacing: 0.03125rem;
+                }
+            }
+
+            @media screen and (max-width: 400px) {
+                .menu_card {
+                    width: 18.562rem;
+                }
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            #menu_card {
+                padding: unset;
+                padding: 2rem 0;
+            }
+        }
+    }
+}

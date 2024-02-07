@@ -1,0 +1,324 @@
+.footer {
+  background: #FCF1DB;
+  padding: 10vmin 0 3vmin 0;
+
+  .main {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .links {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          padding: 1rem 2rem;
+
+          img {
+              max-width: 12.05769rem;
+              width: 100%;
+          }
+
+          p {
+              color: #1A1A1A;
+              font-family: Raleway;
+              font-size: 1rem;
+              font-style: normal;
+              font-weight: 500;
+              letter-spacing: 0.02rem;
+              text-transform: capitalize;
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              margin-bottom: unset;
+
+              i {
+                  color: #822E1B;
+                  font-size: 1.5rem;
+              }
+          }
+
+          a {
+              color: #1A1A1A;
+              font-family: Raleway;
+              font-size: 1rem;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 1.375rem;
+              letter-spacing: 0.02rem;
+              text-transform: capitalize;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+
+              i {
+                  color: #822E1B;
+                  font-size: 1.5rem;
+              }
+          }
+
+          .footer_links {
+              display: flex;
+
+              a {
+                  svg {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      width: 3.3rem;
+                      height: 3.3rem;
+                      font-size: 1.5rem;
+                      border-radius: 7px;
+                      background-color: #822E1B;
+                      margin: .4rem;
+                      color: #FFF;
+                      padding:12px;
+                  }
+              }
+          }
+      }
+
+      @media screen and (max-width: 400px) {
+          .links {
+              padding: unset;
+              padding: 1rem 0;
+          }
+      }
+
+      .home {
+          padding: 1rem 2rem;
+          display: flex;
+          flex-direction: column;
+
+          h1 {
+              color: #822E1B;
+              padding-bottom: 2rem;
+              font-family: Anastasia;
+              font-size: 2rem;
+              font-style: normal;
+              font-weight: 5;
+              line-height: normal;
+              letter-spacing: 0.04rem;
+              text-transform: uppercase;
+              text-align: unset;
+          }
+
+          ul {
+              padding-left: 0;
+              margin-left: 0;
+
+              li {
+                  padding: .3rem 0;
+
+                  a {
+                      color: #1A1A1A;
+                      font-family: Raleway;
+                      font-size: 1rem;
+                      font-style: normal;
+                      font-weight: 500;
+                      line-height: normal;
+                      letter-spacing: 0.02rem;
+                      text-transform: capitalize;
+                      text-decoration: none;
+                  }
+              }
+          }
+      }
+
+      @media screen and (max-width: 400px) {
+          .home {
+              padding: unset;
+              padding: 1rem 0;
+          }
+      }
+
+      .timing {
+          padding: 1rem 0rem;
+
+          h1 {
+              color: #822E1B;
+              font-family: Anastasia;
+              font-size: 2rem;
+              font-style: normal;
+              font-weight: 5;
+              line-height: normal;
+              padding-left: 1.8rem;
+              letter-spacing: 0.04rem;
+              text-transform: uppercase;
+              padding-bottom: 2rem;
+          }
+
+          ul {
+              li {
+                  color: #1A1A1A;
+                  font-family: Raleway;
+                  font-size: 1rem;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 0.84375rem;
+                  letter-spacing: 0.02rem;
+                  text-transform: capitalize;
+                  padding: .6rem 0;
+              }
+          }
+      }
+
+      @media screen and (max-width: 400px) {
+          .timing {
+
+              h1 {
+                  padding-left: unset;
+              }
+
+              ul {
+                  padding-left: unset;
+                  margin-right: 2rem;
+              }
+          }
+      }
+
+      .partners {
+          padding: 1rem 2rem;
+
+          h1 {
+              color: #822E1B;
+              font-family: Anastasia;
+              font-size: 2rem;
+              font-style: normal;
+              font-weight: 5;
+              line-height: normal;
+              letter-spacing: 0.04rem;
+              text-transform: uppercase;
+              padding-bottom: 2rem;
+          }
+
+          .partner_img {
+              display: flex;
+              gap: 1rem;
+
+              img {
+                  width: 5.4375rem;
+                  height: 5.4375rem;
+              }
+          }
+      }
+
+      @media screen and (max-width: 400px) {
+          .partners {
+              padding: unset;
+              padding: 1rem 0;
+          }
+      }
+  }
+
+  .footer_bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      hr {
+          color: #822E1B;
+          width: 92%;
+          border: .13rem solid #822E1B;
+      }
+
+      p {
+          padding-top: 2vmin;
+          color: #1A1A1A;
+          font-family: Raleway;
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 0.0175rem;
+          text-transform: uppercase;
+          padding: 0 1rem;
+          text-align: center;
+
+          span {
+              color: #822E1B;
+              font-family: Raleway;
+              font-size: 0.875rem;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              letter-spacing: 0.0175rem;
+              text-transform: uppercase;
+
+              span {
+                  color: #822E1B;
+                  font-family: Raleway;
+                  font-size: 0.875rem;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: normal;
+                  letter-spacing: 0.0175rem;
+                  text-transform: uppercase;
+              }
+
+          }
+      }
+  }
+
+  @media screen and (max-width: 600px) {
+      .main {
+          display: flex;
+          justify-content: unset;
+          padding: 2rem;
+          flex-wrap: wrap;
+          gap: 1rem;
+      }
+
+      .footer_bottom {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          hr {
+              color: #822E1B;
+              width: 92%;
+              border: .13rem solid #822E1B;
+          }
+
+          p {
+              padding-top: 2vmin;
+              color: #1A1A1A;
+              font-family: Raleway;
+              font-size: 0.875rem;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              letter-spacing: 0.0175rem;
+              text-transform: uppercase;
+              padding: 0 1rem;
+              text-align: center;
+
+              span {
+                  color: #822E1B;
+                  font-family: Raleway;
+                  font-size: 0.875rem;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  letter-spacing: 0.0175rem;
+                  text-transform: uppercase;
+
+                  span {
+                      color: #822E1B;
+                      font-family: Raleway;
+                      font-size: 0.875rem;
+                      font-style: normal;
+                      font-weight: 700;
+                      line-height: normal;
+                      letter-spacing: 0.0175rem;
+                      text-transform: uppercase;
+                  }
+
+              }
+          }
+      }
+  }
+}

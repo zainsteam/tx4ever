@@ -1,0 +1,246 @@
+
+
+header {
+    overflow: hidden;
+
+    .hidden_force{display: none !important;}
+
+    nav {
+        background: #FCF1DB;
+
+        .main {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            text-align: center;
+            height: 6.375rem;
+
+            .left {
+                img {
+                    max-height: 78px;
+                    height: 100%;
+                }
+            }
+
+            .right {
+                ul {
+                    position: relative;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
+
+                    .resImgNav {
+                        display: none;
+                    }
+
+                    li {
+                        margin: 0 .5rem;
+                        margin-top: 1.3rem;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                                justify-content: center;
+
+                        // &:nth-child(2)::before {
+                        //     content: '';
+                        //     width: 3.5rem;
+                        //     height: 2px;
+                        //     display: block;
+                        //     background-color: #000;
+                        //     position: absolute;
+                        //     bottom: 0px;
+                        //     -webkit-transition: 200ms all;
+                        //     -o-transition: 200ms all;
+                        //     transition: 200ms all;
+                        // }
+
+                        a {
+                            padding: .5rem;
+                            color: #1A1A1A;
+                            font-family: Anastasia;
+                            font-size: 1.5rem;
+                            font-style: normal;
+                            font-weight: 5;
+                            line-height: normal;
+                            letter-spacing: 0.44px;
+                            text-decoration: none;
+                            -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                    justify-content: center;
+                            -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                    align-items: center;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+
+                            &.active::before  {
+                                content: "";
+                                width: 3.5rem;
+                                height: 2px;
+                                display: block;
+                                background-color: #000;
+                                position: absolute;
+                                bottom: 0px;
+                                -webkit-transition: 200ms all;
+                                -o-transition: 200ms all;
+                                transition: 200ms all;
+
+                            }
+
+                            &::before {
+                                content: '';
+                                width: 0rem;
+                                height: 2px;
+                                display: block;
+                                background-color: #000;
+                                position: absolute;
+                                bottom: 0px;
+                                -webkit-transition: 200ms all;
+                                -o-transition: 200ms all;
+                                transition: 200ms all;
+                            }
+
+                            &:hover::before {
+                                width: 3.5rem;
+                            }
+
+                            &:active {
+                                color: #1a1a1a56;
+                            }
+                        }
+                    }
+                }
+
+                #nav_close {
+                    display: none;
+                }
+            }
+
+            #nav_bar {
+                display: none;
+                font-size: 1.5rem;
+                color: #822E1B;
+                cursor: pointer;
+            }
+
+
+        }
+
+        @media screen and (max-width: 768px) {
+            .main {
+                .right {
+                    display: none;
+
+                    #nav_close {
+                        font-size: 1.5rem;
+                        position: absolute;
+                        position: fixed;
+                        color: #822E1B;
+                        top: 2rem;
+                        left: 12rem;
+                        z-index: 999;
+                        cursor: pointer;
+                        display: block;
+                    }
+                }
+
+                .nav_mobile {
+                    display: block;
+                    overflow: hidden;
+
+                    ul {
+                        z-index: 99;
+                        max-width: 15rem;
+                        width: 100%;
+                        height: 100vh;
+                        background-color: #FCF1DB;
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
+                        -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                                justify-content: center;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                            -ms-flex-direction: column;
+                                flex-direction: column;
+                        position: absolute;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        padding-left: unset;
+
+                        .resImgNav {
+                            display: block;
+                        }
+
+                        img {
+                            margin-bottom: 1.5rem;
+                            height: 5rem;
+                        }
+
+                        li {
+                            padding: .5rem 0rem;
+                            width: 100%;
+                            -webkit-transition: 300ms all;
+                            -o-transition: 300ms all;
+                            transition: 300ms all;
+                            margin-top: unset;
+
+                            #navHome {
+                                background-color: #f5dba7;
+                            }
+
+
+                            a {
+                                width: 100%;
+                                padding: 1rem .5rem;
+                                color: #1A1A1A;
+                                font-family: Anastasia;
+                                font-size: 1.5rem;
+                                font-style: normal;
+                                font-weight: 5;
+                                line-height: normal;
+                                letter-spacing: 0.44px;
+                                text-decoration: none;
+                                -webkit-transition: 300ms all;
+                                -o-transition: 300ms all;
+                                transition: 300ms all;
+
+                                &:hover {
+                                    background-color: #f5dba7;
+                                }
+
+                                &:hover::before {
+                                    width: 0;
+                                }
+
+                            }
+                        }
+
+                    }
+
+
+                }
+
+                #nav_bar {
+                    display: block;
+                }
+            }
+        }
+    }
+}
